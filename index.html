@@ -1,61 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./intro-section-with-dropdown-navigation-main/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./intro-section-with-dropdown-navigation-main/images/favicon-32x32.png"
+    />
 
     <title>Intro section with dropdown navigation</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/3bff1e8587.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <main>
-        <header>
-            <nav class="nav-bar">
-                <img src="/intro-section-with-dropdown-navigation-main/images/logo.svg" alt="">
-                <ul>
-                    <li>Features
-                        <ul>
-                        <li>Todo List</li>
-                        <li>Calendar</li>
-                        <li>Reminders</li>
-                        <li>Planning</li>
-                        </ul>
-                    </li>
-                    <li>Company
-                        <ul>
-                            <li>History</li>
-                            <li>Our Team</li>
-                            <li>Blog</li>
-                        </ul>
-                    </li>
-                    <li>Careers</li>
-                    <li>About</li>
-                    <li>Login</li>
-                    <li>Register</li>
-                </ul>
-                
-            </nav>
-            
+      <header>
+        <nav class="nav-bar">
+          <div class="nav-section" id="nav-logo-section">
+            <img
+              src="/intro-section-with-dropdown-navigation-main/images/logo.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="nav-section" id="nav-link-section">
+            <div class="dropdown">
+              <a href="#" class="drop-button">Features</a>
+              <i class="fa-solid fa-angle-down"></i>
+              <div class="dropdown-content">
+                <div class="dropdown-link">
+                  <i class="fa-solid fa-clipboard-list"></i>
+                  <a href="#"> Todo List </a>
+                </div>
+                <div class="dropdown-link">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <a href="#"> Calendar </a>
+                </div>
+                <div class="dropdown-link">
+                  <i class="fa-regular fa-bell"></i>
+                  <a href="#"> Reminders </a>
+                </div>
+                <div class="dropdown-link">
+                  <i class="fa-regular fa-clock"></i>
+                  <a href="#"> Planning </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="drop-button">Company</a>
+              <i class="fa-solid fa-angle-down"></i>
+              <div class="dropdown-content">
+                <a href="#"> History </a>
+                <a href="#"> Our Team </a>
+                <a href="#"> Blog </a>
+                <a href="#"> Planning </a>
+              </div>
+            </div>
+
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+          </div>
+
+          <div class="nav-section" id="nav-cta-section">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+          </div>
+        </nav>
+
+        <div class="hero">
+          <div class="information">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button>Learn more</button>
+            <div class="sponsors">
+            </div>
+          </div>
+          <div class="hero-picture">
+            <img src="/intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png" alt="">
+          </div>
           
-            <div class="hero">
-                <h1>Make remote work</h1>
-                <p> Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-                <button>Learn more</button>
-            </div> 
-        </header>
-        
-      
-    </main>
-  
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Soilianmang Thangsing</a>
+        </div>
+       
+      </header>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Soilianmang Thangsing</a>
       </div>
+    </main>
+   
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
