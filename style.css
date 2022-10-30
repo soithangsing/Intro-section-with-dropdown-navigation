@@ -171,3 +171,7 @@ font-weight: 700;
     padding-left: 6.5rem;
     text-align: start;
 }
+
+.attribution a {
+    text-decoration: none;
+}
