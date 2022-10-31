@@ -152,6 +152,8 @@ font-weight: 700;
 
 #learn-more-button:hover {
     cursor: pointer;
+    background-color: var(--almost-white);
+    color: var(--almost-black);
 }
 
 .paragraph {
