@@ -3,9 +3,12 @@
 /* font-family: 'Epilogue', sans-serif; */
 
 .attribution {
-  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
   text-align: center;
+  font-weight: 500;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -69,6 +72,10 @@ nav > .nav-section {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+#mobile-nav-bar {
+    display: none;
 }
 
 ul {
@@ -216,7 +223,7 @@ dropdown-content a {
 
 .paragraph {
   line-height: 30px;
-  color: var(--almost-black);
+  color: var(--medium-gray);
 }
 
 .heading-mobile {
@@ -239,8 +246,14 @@ dropdown-content a {
 .attribution a {
   text-decoration: none;
 }
-
+.paragraph-mobile {
+    display: none;
+}
 @media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
     p {
         font-size: 12px;
     }
@@ -248,11 +261,16 @@ dropdown-content a {
     .hero {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 35px;
     }
 
     .hero-information__text {
         margin: 0;
         padding: 0;
+        gap: 10px;
     }
 
     .heading {
@@ -261,13 +279,36 @@ dropdown-content a {
 
     .heading-mobile {
         display: block;
+        padding: 0;
+        font-size: 22px;
     }
-    
+
     .heading-mobile p {
-        font-size: 2rem;
+        font-size: 2.2rem;
         padding: 0;
         margin: 0;
         font-weight: 700;
+      }
+
+      .paragraph {
+        display: none;
+      }
+
+      .paragraph-mobile {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+
+      .paragraph-mobile p {
+        color: var(--medium-gray);
+        font-size: 18px;
+        line-height: 1.8rem;
+      }
+
+      .button {
+        margin: 0;
+        padding: 0;
       }
 
       .hero-picture-desktop {
@@ -280,5 +321,36 @@ dropdown-content a {
       .hero-picture-mobile img {
         height: 40vh;
         width: 100%;
+      }
+
+      .hero-clients {
+        margin: 0;
+        padding: 0;
+        gap:20px;
+      }
+
+      .hero-clients img {
+        height: 19px;
+        width: auto;
+      }
+
+      .attribution {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      main {
+        margin-bottom: 30px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      #mobile-nav-bar {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
       }
   }
