@@ -377,6 +377,10 @@ dropdown-content a {
         transition: right 0.4s ease;
       }
 
+      .inactive {
+        display: none;
+      }
+
       .third-mobile-menu-div {
         display: flex;
         flex-direction: column;
